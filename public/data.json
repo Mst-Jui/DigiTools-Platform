@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Resume AI Builder",
+    "description": "Create job-winning resumes using smart AI suggestions.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "AI content suggestions",
+      "Export to PDF & DOCX"
+    ],
+    "icon": "/portfolio.png"
+  },
+  {
+    "id": 2,
+    "name": "AI Content Writer",
+    "description": "Generate high-quality blogs, ads, and social media content instantly.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Blog & article generator",
+      "SEO optimization",
+      "Multiple tone styles",
+      "Unlimited revisions"
+    ],
+    "icon": "/writing_2327400 1.png"
+  },
+  {
+    "id": 3,
+    "name": "Design Toolkit",
+    "description": "Design social posts, banners, and ads with ease.",
+    "price": 25,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "500+ templates",
+      "Drag & drop editor",
+      "Brand kit support",
+      "Export in multiple formats"
+    ],
+    "icon": "/design-tool.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Website Builder",
+    "description": "Launch your personal portfolio in minutes.",
+    "price": 20,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Custom domain support",
+      "Responsive design",
+      "SEO ready",
+      "One-click publish"
+    ],
+    "icon": "https://i.ibb.co/7N4yxZdj/download.png"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Pro Pack",
+    "description": "All-in-one toolkit for freelancers to manage work efficiently.",
+    "price": 18,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Proposal templates",
+      "Invoice generator",
+      "Client management",
+      "Project tracking"
+    ],
+    "icon": "https://i.ibb.co/hFQcDR9h/download-3.png"
+  },
+  {
+    "id": 6,
+    "name": "AI Video Generator",
+    "description": "Create engaging videos from text in seconds.",
+    "price": 30,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Text-to-video",
+      "Voiceover support",
+      "Stock footage library",
+      "HD export"
+    ],
+    "icon": "https://i.ibb.co/V04PdPNV/download-2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Marketing Automation Suite",
+    "description": "Automate your email campaigns and customer journeys.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Email campaigns",
+      "User segmentation",
+      "Analytics dashboard",
+      "Automation workflows"
+    ],
+    "icon": "/operation.png"
+  },
+  {
+    "id": 8,
+    "name": "Ultimate DigiTools Bundle",
+    "description": "Access all tools in one powerful bundle.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "All premium tools included",
+      "Unlimited usage",
+      "Priority support",
+      "Early feature access"
+    ],
+    "icon": "https://i.ibb.co/kgXZMcBd/download-1.png"
+  }
+]
