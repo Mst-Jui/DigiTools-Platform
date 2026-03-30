@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiShoppingCart } from 'react-icons/fi';
 
 const Store = ({ cart, setCart }) => {
   // console.log(productsInfo);
@@ -19,7 +20,12 @@ const Store = ({ cart, setCart }) => {
 
 
       {
-        cart.length === 0 ? <p>no card</p> :
+        cart.length === 0 ? 
+        <div className='flex items-center justify-center flex-col gap-4'>
+          <FiShoppingCart className='text-6xl text-gray-400'/>
+          <p className='text-gray-400'>Your Cart is Empty</p>
+        </div>
+         :
           <>
             {
               cart.map(c => <div className='p-4 bg-[#F9FAFC] rounded-xl flex justify-between items-center' key={c.id}>
