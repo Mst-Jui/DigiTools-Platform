@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 
 const Store = ({ cart, setCart }) => {
   // console.log(productsInfo);
@@ -7,12 +8,13 @@ const Store = ({ cart, setCart }) => {
   const handleDelete = (c) => {
     const filterDelete = cart.filter(f => f.id !== c.id);
     setCart(filterDelete)
-    alert("successfully delete")
+    toast.success("Removed Successfully!")
   }
 
-  const totalPrice = cart.reduce((sum, c)=> sum+c.price,0);
-  const handleCheckout =()=>{
+  const totalPrice = cart.reduce((sum, c) => sum + c.price, 0);
+  const handleCheckout = () => {
     setCart([]);
+    toast.success("Checkout Successful! Your cart is now empty.")
   }
 
   return (
@@ -20,15 +22,15 @@ const Store = ({ cart, setCart }) => {
 
 
       {
-        cart.length === 0 ? 
-        <div className='flex items-center justify-center flex-col gap-4'>
-          <FiShoppingCart className='text-6xl text-gray-400'/>
-          <p className='text-gray-400'>Your Cart is Empty</p>
-        </div>
-         :
-          <>
+        cart.length === 0 ?
+          <div className='flex items-center justify-center flex-col gap-4'>
+            <FiShoppingCart className='text-6xl text-gray-400' />
+            <p className='text-gray-400'>Your Cart is Empty</p>
+          </div>
+          :
+          <div>
             {
-              cart.map(c => <div className='p-4 bg-[#F9FAFC] rounded-xl flex justify-between items-center' key={c.id}>
+              cart.map(c => <div className='p-4 bg-[#F9FAFC] rounded-xl flex justify-between items-center mb-4' key={c.id}>
                 {/* info  */}
                 <div>
                   <div className='flex items-center gap-4'>
@@ -57,12 +59,11 @@ const Store = ({ cart, setCart }) => {
               <p className='font-bold text-2xl'>${totalPrice}</p>
             </div>
             <div className='my-5'>
-              <button 
-              onClick={handleCheckout}
-              className='btn w-full rounded-full font-bold text-white border-none bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Proceed to Checkout</button>
+              <button
+                onClick={handleCheckout}
+                className='btn w-full rounded-full font-bold text-white border-none bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Proceed to Checkout</button>
             </div>
-
-          </>
+          </div>
       }
     </div>
   );

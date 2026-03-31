@@ -15,7 +15,7 @@ const ProductsSection = ({ productsPromise, cart, setCart }) => {
 
 
       <div className='text-center'>
-        <h2 className='font-extrabold text-5xl'>Premium Digital Tools</h2>
+        <h2 className='font-extrabold text-5xl mb-4'>Premium Digital Tools</h2>
         <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
 
         {/* Toggle btns  */}

@@ -9,6 +9,7 @@ import StartedSteps from './components/StartedSteps'
 import TransparentPricing from './components/TransparentPricing'
 import WorkFlow from './components/WorkFlow'
 import Footer from './components/Footer'
+import { ToastContainer } from 'react-toastify'
 
 const productsInfoFatch = async () => {
   const res = await fetch("/data.json");
@@ -32,8 +33,8 @@ function App() {
 
 
       <main>
-        <Banner className='max-w-6xl mx-auto' />
-        {/* <StatsSection className='max-w-6xl mx-auto' /> */}
+        <Banner />
+        <StatsSection className='max-w-6xl mx-auto' />
 
         <Suspense fallback={<p>Loading...</p>} className='max-w-6xl mx-auto'>
           <ProductsSection className='max-w-6xl mx-auto'
@@ -59,7 +60,7 @@ function App() {
 
 
 
-
+ <ToastContainer />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TiTick } from 'react-icons/ti';
+import { toast } from 'react-toastify';
 
 const ProductSection = ({ productsInfo, cart, setCart }) => {
   // console.log(productsInfo)cart info 
@@ -11,11 +12,11 @@ const ProductSection = ({ productsInfo, cart, setCart }) => {
      setIsSelected(true);
      const isFound = cart.find((i) =>i.id === productsInfo.id);
      if(isFound){
-      alert("already exist")
+      toast.error("This item is already in your cart!")
       return;
      }
      setCart([...cart, productsInfo])
-     alert("success")
+     toast.success("Successfully Added to Cart!")
  }
 
  

@@ -47,7 +47,7 @@ const Navbar = ({cart}) => {
         <a className="relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition">
 
           {/* Badge */}
-          <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow">
+          <span className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow">
             {cart.length}
           </span>
 
