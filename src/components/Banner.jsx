@@ -22,9 +22,9 @@ const Banner = () => {
               New: AI-Powered Tools Available</span>
           </span>
 
-          <h1 className="text-5xl  font-extrabold text-[#101727]">Supercharge Your Digital Workflow</h1>
+          <h1 className="text-6xl  font-extrabold text-[#101727] text-center md:text-left">Supercharge Your Digital Workflow</h1>
           <p className="text-[#627382] text-[18px]">
-            Access premium AI tools, design assets, templates, and productivitysoftware—all in one place. Start creating faster today.Explore Products
+            Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.Explore Products
           </p>
           <div className='flex gap-4 justify-center sm:justify-start'>
             <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full font-bold">Explore Products</button>
