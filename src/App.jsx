@@ -5,6 +5,8 @@ import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import ProductsSection from './components/ProductsSection'
 import StatsSection from './components/StatsSection'
+import StartedSteps from './components/StartedSteps'
+import TransparentPricing from './components/TransparentPricing'
 
 const productsInfoFatch = async () => {
   const res = await fetch("/data.json");
@@ -39,6 +41,10 @@ function App() {
           setCart={setCart}
         />
       </Suspense>
+
+
+      <StartedSteps className='max-w-6xl mx-auto' />
+      <TransparentPricing/>
 
 
 

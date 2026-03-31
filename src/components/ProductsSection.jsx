@@ -58,10 +58,9 @@ const ProductsSection = ({ productsPromise, cart, setCart }) => {
                   setCart={setCart} />)
             }
           </div> :
-          <div className='max-w-6xl mx-auto border border-gray-400 py-2 mb-20'>
+          <div className='max-w-6xl mx-auto border border-gray-300 rounded-xl py-2 mb-20'>
             <h2 className='font-bold text-2xl ml-10 mt-2'>Your Cart</h2>
             {
-              
                 <Store
                   cart={cart}
                   setCart={setCart} />
