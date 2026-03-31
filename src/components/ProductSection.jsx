@@ -8,7 +8,6 @@ const ProductSection = ({ productsInfo, cart, setCart }) => {
 
 
  const handleBuyNowBtn=()=>{
-    //  setCart(false)
      setIsSelected(true);
      const isFound = cart.find((i) =>i.id === productsInfo.id);
      if(isFound){

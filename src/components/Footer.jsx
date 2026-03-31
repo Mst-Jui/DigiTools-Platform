@@ -5,8 +5,8 @@ import { RiInstagramFill } from 'react-icons/ri';
 
 const Footer = () => {
   return (
-    <div className='bg-[#101727] py-20'>
-      <div className='max-w-6xl mx-auto flex justify-between items-start gap-6 text-white'>
+    <div className='bg-[#101727] pb-10 pt-23'>
+      <div className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-white'>
         {/* DigiTools  */}
         <div className='flex-[2] space-y-4'>
           <h2 className='font-extrabold text-4xl'>DigiTools</h2>
@@ -64,9 +64,9 @@ const Footer = () => {
           <hr className='h-px border border-[#3B414E] my-12'/>
 
           {/* copy right  */}
-          <div className='flex justify-between items-center'>
+          <div className='flex flex-col sm:flex-row justify-between items-center gap-5'>
            <p className='text-gray-500'>© 2026 Digitools. All rights reserved.</p>
-           <div className='flex items-center gap-6 text-gray-500'>
+           <div className='flex flex-wrap justify-center sm:justify-start items-center gap-6 text-gray-500'>
              <p>Privacy Policy</p>                       
              <p>Terms of Service</p>
              <p>Cookies</p>
