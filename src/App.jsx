@@ -34,7 +34,7 @@ function App() {
 
       <main>
         <Banner />
-        <StatsSection className='max-w-6xl mx-auto' />
+         <StatsSection className='max-w-6xl mx-auto' />
 
         <Suspense fallback={<p>Loading...</p>} className='max-w-6xl mx-auto'>
           <ProductsSection className='max-w-6xl mx-auto'
@@ -46,7 +46,7 @@ function App() {
 
         <StartedSteps className='max-w-6xl mx-auto' />
         <TransparentPricing />
-        <WorkFlow />
+        <WorkFlow /> 
       </main>
 
 

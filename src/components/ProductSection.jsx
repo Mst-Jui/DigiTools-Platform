@@ -5,23 +5,23 @@ import { toast } from 'react-toastify';
 const ProductSection = ({ productsInfo, cart, setCart }) => {
   // console.log(productsInfo)cart info 
   // console.log(cart);
-  
 
 
- const handleBuyNowBtn=()=>{
-     setIsSelected(true);
-     const isFound = cart.find((i) =>i.id === productsInfo.id);
-     if(isFound){
+
+  const handleBuyNowBtn = () => {
+    setIsSelected(true);
+    const isFound = cart.find((i) => i.id === productsInfo.id);
+    if (isFound) {
       toast.error("This item is already in your cart!")
       return;
-     }
-     setCart([...cart, productsInfo])
-     toast.success("Successfully Added to Cart!")
- }
+    }
+    setCart([...cart, productsInfo])
+    toast.success("Successfully Added to Cart!")
+  }
 
- 
 
- const [isSelected, setIsSelected] = useState(false)
+
+  const [isSelected, setIsSelected] = useState(false)
 
   return (
     <div className='border border-[#f2f2f2] p-6 rounded-2xl space-y-4'>
@@ -68,8 +68,11 @@ const ProductSection = ({ productsInfo, cart, setCart }) => {
         }
       </ul>
       <button
-      onClick={handleBuyNowBtn}
-      className="btn w-full rounded-full font-bold text-white border-none bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
+        onClick={handleBuyNowBtn}
+        className={`btn w-full rounded-full font-bold text-white border-none  
+      ${isSelected
+            ? "bg-green-500"
+            : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}>
         {isSelected ? "Added to cart" : "Buy Now"}
       </button>
 
