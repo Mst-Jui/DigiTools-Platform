@@ -34,9 +34,12 @@ function App() {
 
       <main>
         <Banner />
-         <StatsSection className='max-w-6xl mx-auto' />
+        <StatsSection className='max-w-6xl mx-auto' />
 
-        <Suspense fallback={<p className='text-center font-bold text-2xl'>Loading...</p>} className='max-w-6xl mx-auto'>
+        <Suspense fallback={<p className='text-center'>
+          <span class="loading loading-dots loading-xl">
+          </span>
+        </p>} className='max-w-6xl mx-auto'>
           <ProductsSection className='max-w-6xl mx-auto'
             productsPromise={productsPromise}
             cart={cart}
@@ -46,12 +49,12 @@ function App() {
 
         <StartedSteps className='max-w-6xl mx-auto' />
         <TransparentPricing />
-        <WorkFlow /> 
+        <WorkFlow />
       </main>
 
 
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
 
 
@@ -60,7 +63,7 @@ function App() {
 
 
 
- <ToastContainer />
+      <ToastContainer />
     </>
   )
 }
