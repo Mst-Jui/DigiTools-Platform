@@ -36,7 +36,7 @@ function App() {
         <Banner />
          <StatsSection className='max-w-6xl mx-auto' />
 
-        <Suspense fallback={<p>Loading...</p>} className='max-w-6xl mx-auto'>
+        <Suspense fallback={<p className='text-center font-bold text-2xl'>Loading...</p>} className='max-w-6xl mx-auto'>
           <ProductsSection className='max-w-6xl mx-auto'
             productsPromise={productsPromise}
             cart={cart}
