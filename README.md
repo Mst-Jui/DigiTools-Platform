@@ -47,16 +47,18 @@ Follow these steps to run the project on your local machine:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/DigiTools.git
+git clone https://github.com/Mst-Jui/DigiTools-Platform.git
 
 # Go to the project folder
-cd DigiTools
+cd DigiTools-Platform
 
 # Install dependencies
 npm install
 
 # Run the development server
 npm run dev
+
+
 
 
 
